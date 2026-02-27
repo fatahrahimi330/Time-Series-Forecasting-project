@@ -82,6 +82,8 @@ LightGBM reduces RMSE by ~28% and MAE by ~21% over the naive baseline. Training 
 - **Forecast vs Actual** – line plot for an example item over the 28-day validation window
 - **Feature Importance** – horizontal bar chart for top 20 features
 - **Error by Store / Category** – mean absolute error breakdown
+- <img width="690" height="489" alt="image" src="https://github.com/user-attachments/assets/50b8f1ed-0339-42c2-81aa-14eb3e7a8372" />
+
 
 ---
 
