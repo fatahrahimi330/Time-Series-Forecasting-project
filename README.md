@@ -66,12 +66,14 @@ num_boost_round : 1200 (early stopping @ 50)
 
 ## 📊 Results
 
-| Model | RMSE | MAE |
-|-------|------|-----|
-| Baseline (lag_7) | *printed at runtime* | *printed at runtime* |
-| LightGBM | *printed at runtime* | *printed at runtime* |
+| Model | RMSE | MAE | NRMSE |
+|-------|------|-----|-------|
+| Baseline (lag_7) | 2.953569 | 1.415870 | 1.759372 |
+| LightGBM (full train) | 2.136240 | 1.124034 | 1.272508 |
+| LightGBM (last 2 years) | 2.132454 | 1.122434 | 1.270253 |
+| LightGBM (+ store lag) | 2.141787 | 1.117007 | 1.275813 |
 
-LightGBM consistently improves over the naive baseline on both metrics.
+LightGBM reduces RMSE by ~28% and MAE by ~21% over the naive baseline. Training on the last 2 years yields the best overall RMSE/NRMSE, while adding store-level lag features achieves the lowest MAE.
 
 ---
 
